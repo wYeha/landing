@@ -3,4 +3,19 @@
 body {
   background-color: var(--color-white);
   font-family: "Open Sans", sans-serif;
+  color: var(--color-main-black);
+}
+
+html {
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+}
+
+
+body {
+  height: 200vh;
 }

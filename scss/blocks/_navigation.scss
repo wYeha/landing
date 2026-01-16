@@ -1,11 +1,9 @@
 @use "../helpers" as *;
 
 .navigation {
-  grid-column: 2 / 3;
-
   &__list {
     @include flex-center-y;
-    column-gap: 96px;
+    column-gap: 40px;
   }
 
   &__item {

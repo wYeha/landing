@@ -1,0 +1,17 @@
+@use "../helpers" as *;
+
+.button {
+  @include flex-center;
+  height: 61px;
+  column-gap: 4px;
+  border: 1px solid var(--color-accent-blue);
+  background-color: var(--color-accent-blue);
+  border-radius: 99px;
+  color: var(--color-white);
+  font-weight: 700;
+
+  &--green {
+    border: 1px solid var(--color-accent-green-bright);
+    background-color: var(--color-accent-green-20);
+  }
+}

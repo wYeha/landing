@@ -1,7 +1,33 @@
-$laptop: 1380px;
-$tablet: 1023px;
+$wide-screen: 2220px;
+$desktop: 1920px;
+$laptop: 1440px;
+$tablet: 1178px;
 $mobile: 767px;
 $mobile-s: 480px;
+
+@mixin wide-screen-above {
+  @media (width > $wide-screen) {
+    @content
+  }
+}
+
+@mixin wide-screen {
+  @media (width <= $wide-screen) {
+    @content
+  }
+}
+
+@mixin desktop-above {
+  @media (width > $desktop) {
+    @content
+  }
+}
+
+@mixin desktop {
+  @media (width <= $desktop) {
+    @content
+  }
+}
 
 @mixin laptop-above {
   @media (width > $laptop) {
