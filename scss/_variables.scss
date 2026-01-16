@@ -1,0 +1,23 @@
+@use "helpers" as *;
+
+:root {
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+
+  --color-main-black: #0B1227;
+  --color-black-70: #484D5B;
+  --color-black-40: #83868F;
+
+  --color-accent-blue: #3860D2;
+  --color-accent-blue-15: #DFE6F8;
+
+  --color-grey-blue-actions: #A4B4DB;
+
+  --color-accent-green: #ECFFB7;
+  --color-accent-green-20: #FAFEEE;
+
+  --color-main-grey-cards: #E4E4E4;
+
+  --container-width: 1440px;
+  --container-padding-x: 40px;
+}

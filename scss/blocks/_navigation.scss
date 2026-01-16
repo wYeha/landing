@@ -1,0 +1,21 @@
+@use "../helpers" as *;
+
+.navigation {
+  grid-column: 2 / 3;
+
+  &__list {
+    @include flex-center-y;
+    column-gap: 96px;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    padding: 12px 8px;
+    text-decoration: none;
+    color: var(--color-main-black);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+}
