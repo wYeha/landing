@@ -16,6 +16,10 @@
     rel="stylesheet"
     href="css/styles.css"
   >
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  >
 </head>
 <body>
 <header class="header">
@@ -39,7 +43,7 @@
         <li class="navigation__item">
           <a
             class="navigation__link"
-            href="#"
+            href="#about"
           >О платформе
           </a>
         </li>
@@ -63,7 +67,7 @@
 </header>
 
 <main class="main">
-  <section class="hero container">
+  <section class="hero section container">
     <h1 class="h1 hero__title">
       AgroPredict
     </h1>
@@ -147,7 +151,168 @@
       loading="lazy"
     />
   </section>
+
+  <div class="about-gradient-container">
+    <section
+      class="about section container"
+      id="about"
+    >
+      <div class="block-title">
+        <p class="block-title__label">
+          О платформе
+        </p>
+        <div class="block-title__inner">
+          <h2 class="block-title__title">цифровая ИИ-платформа для промышленного птицеводства и свиноводства.</h2>
+          <p class="block-title__caption">Прогнозирует риски, помогает агрохолдингам не реагировать на проблемы, а предотвращать их появление на ранней стадии, обеспечивая управляемый финансовый результат.</p>
+        </div>
+      </div>
+
+      <div class="slider-container">
+        <div class="slider-header">
+          <div
+            class="slider-pagination-custom"
+            id="customPagination"
+          ></div>
+          <div class="slider-navigation">
+            <button
+              class="nav-button swiper-button-prev-custom"
+              id="prevBtn"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button
+              class="nav-button swiper-button-next-custom"
+              id="nextBtn"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-slide-inner">
+                <p>Видос</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide-inner">
+                <p>Видос</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide-inner">
+                <p>Видос</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="features">
+        <ul class="features__list">
+          <li class="features__item">
+            <img
+              src="icons/TrendingUp.svg"
+              alt=""
+              width="32"
+              height="32"
+              loading="lazy"
+            />
+            <div class="features__item-content">
+              <h4>Прогнозирование рисков</h4>
+              <p>Критические отклонения в состоянии поголовья, кормлении и технологии содержания</p>
+            </div>
+          </li>
+          <li class="features__item">
+            <img
+              src="icons/Shield.svg"
+              alt=""
+              width="32"
+              height="32"
+              loading="lazy"
+            />
+            <div class="features__item-content">
+              <h4>Раннее выявление заболеваний</h4>
+              <p>Интерпретация лабораторных данных и выявление проблем на ранней стадии</p>
+            </div>
+          </li>
+          <li class="features__item">
+            <img
+              src="icons/BarChart.svg"
+              alt=""
+              width="32"
+              height="32"
+              loading="lazy"
+            />
+            <div class="features__item-content">
+              <h4>Управленческая аналитика</h4>
+              <p>Комплексные отчеты с KPI, проблемными зонами и динамикой критических параметров</p>
+            </div>
+          </li>
+          <li class="features__item">
+            <img
+              src="icons/Bot.svg"
+              alt=""
+              width="32"
+              height="32"
+              loading="lazy"
+            />
+            <div class="features__item-content">
+              <h4>ИИ-ассистент 24/7</h4>
+              <p>Виртуальный помощник для постоянного анализа состояния стада</p>
+            </div>
+          </li>
+          <li class="features__item">
+            <img
+              src="icons/Camera.svg"
+              alt=""
+              width="32"
+              height="32"
+              loading="lazy"
+            />
+            <div class="features__item-content">
+              <h4>Видеомониторинг</h4>
+              <p>Умные камеры и IoT-сенсоры для контроля в режиме реального времени</p>
+            </div>
+          </li>
+          <li class="features__item">
+            <img
+              src="icons/Globe.svg"
+              alt=""
+              width="32"
+              height="32"
+              loading="lazy"
+            />
+            <div class="features__item-content">
+              <h4>Российское решение</h4>
+              <p>Интеграция с 1С и другими системами, без рисков по санкциям</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
 </main>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/main.js"></script>
 </body>
+
 </html>

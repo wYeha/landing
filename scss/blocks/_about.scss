@@ -1,0 +1,12 @@
+@use "../helpers" as *;
+
+.about {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+
+}
+
+.about-gradient-container {
+  background: linear-gradient(180deg, #fff 0%, #f4f4f4 54.26%, #fff 100%);
+}

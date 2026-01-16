@@ -1,0 +1,82 @@
+@use "../helpers" as *;
+
+.slider-container {
+  overflow: hidden;
+  border: 1px solid #c1c7cd;
+  border-radius: 20px;
+  height: 872px;
+}
+
+.slider-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+}
+
+.slider-pagination-custom {
+  display: flex;
+  gap: 8px;
+}
+
+.pagination-dot {
+  @include square(14px);
+  background-color: var(--color-gray-20);
+  border-radius: 50%;
+  cursor: pointer;
+  @include transition;
+
+  &.active {
+    background-color: var(--color-black-70);
+    width: 38px;
+    border-radius: 8px;
+  }
+
+  @include hover {
+    background-color: var(--color-black-40);
+  }
+}
+
+.slider-navigation {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-button {
+  @include square(40px);
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include transition;
+
+  &:not(:disabled):hover {
+    background: #e0e0e0;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  svg {
+    @include square(20px);
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-color: var(--color-gray-20);
+}
+
+.swiper-slide-inner {
+  height: 100%;
+  @include flex-center;
+}

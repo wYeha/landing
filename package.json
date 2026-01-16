@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/wYeha/landing#readme",
   "description": "",
-  "devDependencies": {
+  "dependencies": {
     "sass": "^1.97.2"
   }
 }

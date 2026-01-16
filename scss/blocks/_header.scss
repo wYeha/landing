@@ -4,8 +4,7 @@
   position: sticky;
   top: 0;
   left: 0;
-  padding-top: 32px;
-  padding-bottom: 8px;
+  padding-block: 32px 16px;
   z-index: 10;
 
   animation-name: scrolling-header;
@@ -20,7 +19,7 @@
   }
 
   &__inner {
-    display: flex;
+    @include flex-center-y;
     justify-content: space-between;
   }
 }
