@@ -1,0 +1,125 @@
+@use "../../helpers/index" as *;
+
+.module-system {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+
+  $cards-gap: 24px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: $cards-gap;
+  }
+
+  &__inner-row {
+    display: flex;
+    column-gap: $cards-gap;
+  }
+
+  &__card {
+    position: relative;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: -1px 8px 19px 0 rgba(79, 94, 104, 0.05), -3px 34px 34px 0 rgba(79, 94, 104, 0.04), -8px 76px 46px 0 rgba(79, 94, 104, 0.03), -14px 134px 54px 0 rgba(79, 94, 104, 0.01), -21px 210px 59px 0 rgba(79, 94, 104, 0);
+    background: var(--color-white);
+    flex-grow: 1;
+    overflow: hidden;
+
+    @include transition;
+    @include hover {
+      cursor: pointer;
+    }
+
+    &--prod {
+      flex-grow: 1208;
+
+      .module-system__card-overlay {
+        background: #FF6B6B; // Красный
+      }
+    }
+
+    &--mon {
+      flex-grow: 988;
+
+      .module-system__card-overlay {
+        background: #4ECDC4; // Бирюзовый
+      }
+    }
+
+    &--ai {
+      flex-grow: 480;
+
+      .module-system__card-overlay {
+        background: #95E1D3; // Мятный
+      }
+    }
+
+    &--lab {
+      flex-grow: 977;
+
+      .module-system__card-overlay {
+        background: #F38181; // Розовый
+      }
+    }
+
+    &--agvisio {
+      flex-grow: 715;
+
+      .module-system__card-overlay {
+        background: #AA96DA; // Фиолетовый
+      }
+    }
+  }
+
+  &__card-content {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__card-link {
+    position: absolute;
+    inset: 0;
+    z-index: 11; // Поверх overlay и контента
+    border-radius: inherit; // Наследует border-radius карточки
+
+    // Убираем outline при фокусе, добавляем свой
+    &:focus-visible {
+      outline: 2px solid var(--color-accent-green);
+      outline-offset: 2px;
+    }
+  }
+
+  &__card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    opacity: 0;
+    @include transition;
+
+    .module-system__card:hover & {
+      opacity: 1;
+    }
+  }
+
+  &__card-overlay-text {
+    color: var(--color-white);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  &__card-header {
+    @include flex-center-y;
+    justify-content: space-between;
+    column-gap: 16px;
+  }
+}

@@ -29,6 +29,6 @@ h1, h2, h3, h4 {
   letter-spacing: -0.01em;
 }
 
-.main .container:not(:last-child) {
+.main > :is(.container, .gradient-container):not(:last-child) {
   margin-bottom: var(--container-margin-y);
 }
