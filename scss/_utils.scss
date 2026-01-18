@@ -27,4 +27,7 @@
   position: absolute;
   user-select: none;
   pointer-events: none;
+  max-width: none;
+  height: auto;
+  flex-shrink: 0;
 }

@@ -239,6 +239,9 @@ svg * {
   position: absolute;
   user-select: none;
   pointer-events: none;
+  max-width: none;
+  height: auto;
+  flex-shrink: 0;
 }
 
 body {
@@ -345,6 +348,12 @@ h1, h2, h3, h4 {
   display: flex;
   column-gap: 32px;
   margin-top: auto;
+}
+@media (width <= 767px) {
+  .hero__buttons {
+    flex-direction: column;
+    row-gap: 16px;
+  }
 }
 .hero__socials {
   display: flex;
@@ -564,9 +573,6 @@ h1, h2, h3, h4 {
   top: 40px;
   right: 0;
   transform: translateX(clamp(0px, (1920px - 100vw) * 0.5, 700px));
-  max-width: none;
-  height: auto;
-  flex-shrink: 0;
 }
 @media (width <= 767px) {
   .advantages__bg-image {

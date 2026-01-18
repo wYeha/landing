@@ -15,10 +15,6 @@
         clamp(0px, calc((1920px - 100vw) * 0.5), 700px)
     );
 
-    max-width: none;
-    height: auto;
-    flex-shrink: 0;
-
     @include mobile {
       display: none;
     }

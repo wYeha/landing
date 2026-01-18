@@ -41,6 +41,11 @@
     display: flex;
     column-gap: 32px;
     margin-top: auto;
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 16px;
+    }
   }
 
   &__socials {
