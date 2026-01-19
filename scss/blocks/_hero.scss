@@ -72,6 +72,7 @@
 
   &__button-submit {
     width: 348px;
+    text-decoration: none;
 
     @include tablet-s {
       width: 100%;

@@ -493,6 +493,7 @@ h1, h2, h3, h4 {
 }
 .hero__button-submit {
   width: 348px;
+  text-decoration: none;
 }
 @media (width <= 900px) {
   .hero__button-submit {
