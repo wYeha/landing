@@ -729,9 +729,17 @@
         <p class="block-title__caption">Оставьте контакты — наши специалисты свяжутся с вами, чтобы подготовить предложение с учётом специфики и потребностей вашего хозяйства</p>
       </div>
     </div>
-    <form class="form" action="/submit" method="POST" novalidate>
+    <form
+      class="form"
+      action="/submit"
+      method="POST"
+      novalidate
+    >
       <div class="form__group">
-        <label class="form__label" for="fullname">
+        <label
+          class="form__label"
+          for="fullname"
+        >
           ФИО<span class="required">*</span>
         </label>
         <input
@@ -747,7 +755,10 @@
       </div>
 
       <div class="form__group">
-        <label class="form__label" for="company">
+        <label
+          class="form__label"
+          for="company"
+        >
           Название компании<span class="required">*</span>
         </label>
         <input
@@ -764,7 +775,10 @@
 
       <div class="form__row">
         <div class="form__group">
-          <label class="form__label" for="phone">
+          <label
+            class="form__label"
+            for="phone"
+          >
             Телефон<span class="required">*</span>
           </label>
           <input
@@ -780,7 +794,10 @@
         </div>
 
         <div class="form__group">
-          <label class="form__label" for="email">
+          <label
+            class="form__label"
+            for="email"
+          >
             Почта<span class="required">*</span>
           </label>
           <input
@@ -796,7 +813,10 @@
         </div>
       </div>
 
-      <button class="button form__submit" type="submit">
+      <button
+        class="button form__submit"
+        type="submit"
+      >
         Оставить заявку
         <img
           src="icons/arrow.svg"
@@ -809,6 +829,88 @@
     </form>
   </section>
 </main>
+
+<footer class="footer container">
+  <div class="footer__content">
+    <div class="footer__brand">
+      <div class="footer__brand-inner">
+        <img
+          class="footer__logo"
+          src="images/logo.png"
+          alt="Agropredict"
+          width="400"
+          height="165"
+        >
+        <p class="footer__description">
+          Цифровая ИИ-платформа для промышленного птицеводства и свиноводства.
+        </p>
+      </div>
+      <p class="footer__copyright">
+        © 2026 Agropredict. Все права защищены
+      </p>
+    </div>
+
+    <div class="footer__contacts">
+      <h4 class="footer__contacts-title">Контакты разработчика</h4>
+
+      <div class="footer__company-inner">
+        <div class="footer__company-main-details">
+          <p class="footer__company">ООО «Инлайн»</p>
+          <p class="footer__company-details">
+            ИНН 7805355672 • КПП 780501001 • ОГРН 1047855085442
+          </p>
+        </div>
+
+        <ul class="footer__contact-list">
+          <li class="footer__contact-item">
+            <img
+              src="icons/call.svg"
+              alt=""
+              width="24"
+              height="24"
+              loading="lazy"
+            />
+            <a
+              class="footer__contact-link"
+              href="tel:+78124253265"
+            >
+              +7 812 425-32-65
+            </a>
+          </li>
+
+          <li class="footer__contact-item">
+            <img
+              src="icons/geo.svg"
+              alt=""
+              width="24"
+              height="24"
+              loading="lazy"
+            />
+            <span class="footer__contact-text">
+              196066, г. Санкт-Петербург, Московский проспект, д. 212
+            </span>
+          </li>
+
+          <li class="footer__contact-item">
+            <img
+              src="icons/email.svg"
+              alt=""
+              width="24"
+              height="24"
+              loading="lazy"
+            />
+            <a
+              class="footer__contact-link"
+              href="mailto:info@inline-ltd.ru"
+            >
+              info@inline-ltd.ru
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="js/slider.js"></script>
