@@ -14,7 +14,7 @@
   <title>Лендинг</title>
   <link
     rel="stylesheet"
-    href="css/styles.css"
+    href="/css/styles.css"
   >
   <link
     rel="stylesheet"
@@ -98,7 +98,8 @@
           <a
             class="button button--green hero__button-social"
             title="Перейти к форме обратной связи"
-            href="#form"
+            href="/form.html"
+            target="_blank"
           >
             <img
               src="icons/plane.svg"
@@ -139,9 +140,10 @@
         </div>
         <a
           class="button hero__button-submit"
-          href="#form"
+          href="/form.html"
+          target="_blank"
         >
-          Оставить заявку
+          Оставить контакты
           <img
             src="icons/arrow.svg"
             alt=""
@@ -721,116 +723,6 @@
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="form-section section container" id="form">
-    <div class="block-title">
-      <p class="block-title__label">
-        Контакты
-      </p>
-      <div class="block-title__inner">
-        <h2 class="block-title__title">Обратная связь</h2>
-        <p class="block-title__caption">Оставьте контакты — наши специалисты свяжутся с вами, чтобы подготовить предложение с учётом специфики и потребностей вашего хозяйства</p>
-      </div>
-    </div>
-    <form
-      class="form"
-      action="/submit"
-      method="POST"
-      novalidate
-    >
-      <div class="form__group">
-        <label
-          class="form__label"
-          for="fullname"
-        >
-          ФИО<span class="required">*</span>
-        </label>
-        <input
-          class="input"
-          type="text"
-          id="fullname"
-          name="fullname"
-          placeholder="Иванов Дмитрий Петрович"
-          required
-          autocomplete="name"
-          aria-required="true"
-        >
-      </div>
-
-      <div class="form__group">
-        <label
-          class="form__label"
-          for="company"
-        >
-          Название компании<span class="required">*</span>
-        </label>
-        <input
-          class="input"
-          type="text"
-          id="company"
-          name="company"
-          placeholder="ООО «Название компании»"
-          required
-          autocomplete="organization"
-          aria-required="true"
-        >
-      </div>
-
-      <div class="form__row">
-        <div class="form__group">
-          <label
-            class="form__label"
-            for="phone"
-          >
-            Телефон<span class="required">*</span>
-          </label>
-          <input
-            class="input"
-            type="tel"
-            id="phone"
-            name="phone"
-            placeholder="+7 999 123-45-67"
-            required
-            autocomplete="tel"
-            aria-required="true"
-          >
-        </div>
-
-        <div class="form__group">
-          <label
-            class="form__label"
-            for="email"
-          >
-            Почта<span class="required">*</span>
-          </label>
-          <input
-            class="input"
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email@mail.ru"
-            required
-            autocomplete="email"
-            aria-required="true"
-          >
-        </div>
-      </div>
-
-      <button
-        class="button form__submit"
-        type="submit"
-      >
-        Оставить заявку
-        <img
-          src="icons/arrow.svg"
-          alt=""
-          width="20"
-          height="20"
-          loading="lazy"
-        />
-      </button>
-    </form>
   </section>
 </main>
 
