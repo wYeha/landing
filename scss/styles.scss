@@ -13,9 +13,12 @@
 @use "blocks/slider";
 @use "blocks/burger";
 @use "blocks/card-overlay";
+@use "blocks/required";
+@use "blocks/input";
 
 @use "blocks/sections/about";
 @use "blocks/sections/features";
 @use "blocks/sections/advantages";
 @use "blocks/sections/how-its-work";
 @use "blocks/sections/module-system";
+@use "blocks/sections/form";

@@ -1,0 +1,54 @@
+@use "../../helpers/index" as *;
+
+.form-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.form {
+  width: 100%;
+  max-width: 800px;
+  min-height: 455px;
+  background: var(--color-white);
+  border: 1px solid var(--color-accent-blue-15);
+  border-radius: 16px;
+  padding: 40px 32px 32px;
+  box-shadow: -1px 1px 2px 0 rgba(89, 89, 89, 0.05), -2px 3px 4px 0 rgba(89, 89, 89, 0.04), -5px 7px 5px 0 rgba(89, 89, 89, 0.03), -9px 13px 6px 0 rgba(89, 89, 89, 0.01), -14px 20px 7px 0 rgba(89, 89, 89, 0);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include mobile {
+    height: auto;
+  }
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+
+.form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form__label {
+  display: block;
+}
+
+.form__submit {
+  margin-top: auto;
+
+  @include mobile {
+    margin-top: 32px;
+  }
+}
