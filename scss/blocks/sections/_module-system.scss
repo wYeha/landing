@@ -50,8 +50,30 @@
       cursor: pointer;
     }
 
+    @include mobile-s {
+      .module-system__card-overlay {
+        font-size: 14px;
+      }
+    }
+
     &--prod {
       flex: 5.5;
+
+      @media (max-width: 620px) {
+        max-height: none;
+        height: 460px;
+      }
+
+      @media (max-width: 559px) {
+        height: 520px;
+      }
+
+      @include mobile-s {
+
+        .module-system__card-image {
+          width: 200px;
+        }
+      }
 
       .module-system__card-overlay {
         background-color: var(--color-accent-blue-15);
@@ -126,6 +148,10 @@
   &__card-overlay {
 
     .module-system__card:hover & {
+      opacity: 1;
+    }
+
+    .module-system__card:active & {
       opacity: 1;
     }
   }
