@@ -1,0 +1,74 @@
+@use "../helpers" as *;
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  @include mobile-s {
+    flex-direction: column;
+  }
+}
+
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+
+  &__input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+
+    &:checked ~ .checkbox__box {
+      background-color: var(--color-accent-blue);
+      border-color: var(--color-accent-blue);
+
+      &::after {
+        display: block;
+      }
+    }
+  }
+
+  &__box {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: none;
+      left: 5px;
+      top: 2px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+  }
+
+  &__label {
+    margin-left: 8px;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  &:hover .checkbox__box {
+    border-color: var(--color-accent-blue);
+  }
+}
+
+.checkboxes-form-container {
+  padding-top: 16px;
+}
