@@ -9,6 +9,13 @@
   border-radius: 99px;
   color: var(--color-white);
   font-weight: 700;
+  @include transition;
+
+  &:disabled {
+    background-color: var(--color-gray-20);
+    border-color: var(--color-gray-20);
+    cursor: not-allowed;
+  }
 
   &--green {
     border: 1px solid var(--color-accent-green-bright);

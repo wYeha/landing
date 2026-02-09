@@ -51,6 +51,7 @@
       action="/submit"
       method="POST"
       novalidate
+      id="form-el"
     >
       <div class="form__main-inner">
         <div class="form__group">
@@ -189,6 +190,7 @@
               type="checkbox"
               name="agree"
               value="agree"
+              id="form-agree-cb"
             >
             <span class="checkbox__box"></span>
             <span class="checkbox__label">
@@ -204,6 +206,7 @@
       <button
         class="button form__submit"
         type="submit"
+        id="form-submit-btn"
       >
         Оставить контакты
         <img
@@ -217,5 +220,7 @@
     </form>
   </section>
 </main>
+
+<script src="js/form.js"></script>
 </body>
 </html>

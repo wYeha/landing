@@ -565,6 +565,12 @@ h1, h2, h3, h4 {
   border-radius: 99px;
   color: var(--color-white);
   font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+.button:disabled {
+  background-color: var(--color-gray-20);
+  border-color: var(--color-gray-20);
+  cursor: not-allowed;
 }
 .button--green {
   border: 1px solid var(--color-accent-green-bright);
