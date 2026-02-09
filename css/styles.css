@@ -570,6 +570,11 @@ h1, h2, h3, h4 {
   border: 1px solid var(--color-accent-green-bright);
   background-color: var(--color-accent-green-20);
 }
+.button--transparent {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+}
 
 .block-title {
   display: flex;
@@ -823,7 +828,7 @@ h1, h2, h3, h4 {
   border: 2px solid var(--color-accent-blue);
   border-radius: 3px;
   background-color: #fff;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease-in-out;
   flex-shrink: 0;
   margin-top: 2px;
 }
@@ -953,6 +958,50 @@ h1, h2, h3, h4 {
   font-size: 16px;
   line-height: 131%;
   color: var(--color-black-40);
+}
+
+.cookies.visible {
+  opacity: 1;
+  display: flex;
+  visibility: visible;
+}
+.cookies {
+  opacity: 0;
+  display: none;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background-color: var(--color-accent-green);
+  padding-inline: 40px;
+  padding-block: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 93px;
+  width: 100vw;
+  z-index: 101;
+  box-shadow: -1px 1px 2px 0 rgba(89, 89, 89, 0.05), -2px 3px 4px 0 rgba(89, 89, 89, 0.04), -5px 7px 5px 0 rgba(89, 89, 89, 0.03), -9px 13px 6px 0 rgba(89, 89, 89, 0.01), -14px 20px 7px 0 rgba(89, 89, 89, 0);
+  transition: all 0.3s ease-in-out;
+}
+@media (width <= 767px) {
+  .cookies {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+.cookies__buttons {
+  display: flex;
+  gap: 16px;
+}
+@media (width <= 767px) {
+  .cookies__buttons {
+    align-self: flex-end;
+  }
+}
+.cookies__button {
+  padding-inline: 24px;
 }
 
 .about {

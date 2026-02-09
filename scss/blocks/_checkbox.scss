@@ -40,7 +40,7 @@
     border: 2px solid var(--color-accent-blue);
     border-radius: 3px;
     background-color: #fff;
-    transition: all 0.2s ease;
+    @include transition();
     flex-shrink: 0;
     margin-top: 2px; // значение для выравнивания чекбокса по нижнему краю первой строки текста
 

@@ -1,0 +1,46 @@
+@use "../helpers" as *;
+
+.cookies {
+  &.visible {
+    opacity: 1;
+    display: flex;
+    visibility: visible;
+  }
+
+  opacity: 0;
+  display: none;
+  visibility: hidden;
+
+  @include flex-center-y;
+  justify-content: space-between;
+  gap: 16px;
+  background-color: var(--color-accent-green);
+  padding-inline: 40px;
+  padding-block: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 93px;
+  width: 100vw;
+  z-index: 101;
+  box-shadow: -1px 1px 2px 0 rgba(89, 89, 89, 0.05), -2px 3px 4px 0 rgba(89, 89, 89, 0.04), -5px 7px 5px 0 rgba(89, 89, 89, 0.03), -9px 13px 6px 0 rgba(89, 89, 89, 0.01), -14px 20px 7px 0 rgba(89, 89, 89, 0);
+  @include transition;
+
+  @include mobile {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 16px;
+
+    @include mobile {
+      align-self: flex-end;
+    }
+  }
+
+  &__button {
+    padding-inline: 24px;
+  }
+}
