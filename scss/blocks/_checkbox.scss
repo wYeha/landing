@@ -12,7 +12,6 @@
 
 .checkbox {
   display: inline-flex;
-  align-items: center;
   cursor: pointer;
   user-select: none;
 
@@ -36,39 +35,44 @@
   &__box {
     position: relative;
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #ccc;
-    border-radius: 4px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--color-accent-blue);
+    border-radius: 3px;
     background-color: #fff;
-    transition: all 0.2s ease;
+    @include transition();
     flex-shrink: 0;
+    margin-top: 2px; // значение для выравнивания чекбокса по нижнему краю первой строки текста
 
     &::after {
       content: '';
       position: absolute;
       display: none;
-      left: 5px;
-      top: 2px;
+      left: 6px;
+      top: 5px;
+      translate: -50% -50%;
       width: 5px;
       height: 10px;
       border: solid white;
       border-width: 0 2px 2px 0;
+      border-radius: 1px;
       transform: rotate(45deg);
     }
   }
 
   &__label {
-    margin-left: 8px;
+    margin-left: 4px;
     font-size: 16px;
-    line-height: 1.4;
-  }
-
-  &:hover .checkbox__box {
-    border-color: var(--color-accent-blue);
+    line-height: 1.3;
   }
 }
 
 .checkboxes-form-container {
   padding-top: 16px;
+  justify-content: space-between;
+  gap: 16px;
+
+  &--row {
+    flex-direction: row !important;
+  }
 }
