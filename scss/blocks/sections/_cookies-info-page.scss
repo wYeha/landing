@@ -1,0 +1,26 @@
+@use "../../helpers/index" as *;
+
+.cookies-info-page {
+  padding-block: 70px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  &__section-title {
+    text-transform: none;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    list-style: inherit;
+    padding-left: 20px;
+  }
+}

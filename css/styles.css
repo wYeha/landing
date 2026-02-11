@@ -1375,4 +1375,26 @@ h1, h2, h3, h4 {
   display: block;
 }
 
+.cookies-info-page {
+  padding-block: 70px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.cookies-info-page__section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.cookies-info-page__section-title {
+  text-transform: none;
+}
+.cookies-info-page__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  list-style: inherit;
+  padding-left: 20px;
+}
+
 /*# sourceMappingURL=styles.css.map */

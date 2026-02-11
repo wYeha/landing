@@ -25,7 +25,7 @@
 <div class="cookies">
   <p>
     Этот сайт использует cookies и передаёт данные службам веб-аналитики для улучшения функционала.
-    <a href="https://meatinfo.ru/policy/cookie">Узнать подробнее</a>
+    <a href="cookies-info-page.html" target="_blank">Узнать подробнее</a>
   </p>
   <div class="cookies__buttons">
     <button
@@ -1005,7 +1005,7 @@
 <script>
   (function() {
     const form = document.getElementById('form-el');
-    
+
     if (!form) return;
 
     form.addEventListener('submit', async function(e) {
@@ -1056,7 +1056,7 @@
       } catch (error) {
         // Обработка ошибок
         console.error('Ошибка отправки формы:', error);
-        
+
         if (error.name === 'TypeError' && error.message.includes('fetch')) {
           alert('Ошибка сети. Проверьте подключение к интернету и попробуйте снова.');
         } else {
